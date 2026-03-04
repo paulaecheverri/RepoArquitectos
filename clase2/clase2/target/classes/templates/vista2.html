@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>ARQUITECTOS TRABAJANDO</h1>
+<ul>
+    <li th:each="a : ${listaarquitectos}">
+        <td th:text="${a.tipoArquitecto}"></td>:
+        <td th:text="${a.nombre}"></td>
+        <span th:text="${a.disenarEstructura()}"></span>
+    </li>
+</ul>
+</body>
+</html>
